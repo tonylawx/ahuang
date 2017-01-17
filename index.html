@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>对啊黄的表白</title>
+</head>
+<style type="text/css">
+    body {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        font-size: 25px;
+        color: #FFF;
+        font-family: "微软雅黑";
+        background: #f3961c;
+    }
+    
+    div {
+        text-align: left;
+    }
+    
+    .tittle {
+        width: 100%;
+        background: #f3961c;
+        top: 0px;
+        height: 100%;
+        z-index: 0;
+        position: absolute;
+        position: fixed !important;
+        display: none;
+        cursor: default;
+    }
+    
+    .big {
+        font-family: "微软雅黑";
+        color: #FFF;
+        font-size: 35px;
+    }
+    
+    .tishi {
+        position: absolute;
+        position: fixed !important;
+        z-index: 99;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .tishiContent {
+        border: 1px solid #FFF;
+        font-size: 18px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+<script src="jquery-3.0.0.min.js"></script>
+<script>
+    if (localStorage["index"] == "1") {
+        window.location = "#"
+    }
+    $(document).ready(function(e) {
+        $(document).scrollTop(300);
+        timer = setInterval("$.change()", 6000);
+        t = 1;
+        $("#t-" + t).fadeIn();
+        $(document).click(function() {
+            $("#main_audio")[0].play();
+            clearInterval(timer);
+            $.change()
+        });
+        $.change = function() {
+            t++;
+            if (t <= $(".tittle").length) {
+                $(".tittle").slideUp(1500).fadeOut();
+                $("#t-" + t).slideDown(1500).fadeIn()
+            } else {
+                localStorage["index"] = "1";
+                window.location = "#"
+            }
+        }
+    });
+</script>
+<script src="snow.js"></script>
+<style type="text/css">
+    .snow-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 100001;
+    }
+</style>
+<div class="snow-container"></div>
+
+<body>
+    <center>
+        <div class="tittle" id="t-1">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">啊黄，做我女朋友吧！</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-2">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">首先为什么这个网页底色要用黄色呢,因为你叫啊黄</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-3">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">很幸运改变自己的路上遇到了你,很庆幸你与我是同路人</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-4">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">我们总能莫名奇妙地遇见,所以作为男孩子的我主动地和你接触了</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-5">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">这正好符合了你对男孩子的价值观:"这种事情男孩子就应该主动点"</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-6">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">反正我觉得吧与你聊起天来有一种与其他人没有的自然</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-7">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">我不想成为你的世界,只想做你的肩膀</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-8">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">我想陪伴你把沿路感想,活出答案</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-9">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">想陪伴你把独自孤单,变成勇敢</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-10">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">想陪伴你把想念的酸,拥抱成温暖</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-11">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">陪你把彷徨,写出情节来</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-12">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">总之你愿意，我会一直陪着你到故事都说完.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-13">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">很幸运能遇见你,很期望你能成为我的伴侣</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-14">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">在以后的日子里，也许有很的多无法确定</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-15">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">但唯一可以确定的是，我会好好珍惜你</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tittle" id="t-16">
+            <table width="100%" border="0" height="100%">
+                <tr>
+                    <td align="center">一时无言,我想陪伴是才是最长情的告白吧</td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <div align="center" class="tishi">
+        <span class="tishiContent">轻触屏幕继续</span>
+        <br/>
+        <span style="font-size: 10px;">&copy;你的咪咪</span>
+        <br/>
+    </div>
+    <div style="display:none">
+        <script type="text/javascript">
+            var cpro_id = "u2782229";
+        </script>
+        <script type="text/javascript" src="c.js"></script>
+    </div>
+    <link rel="stylesheet" href="cuplayer.css">
+    <div style="position:absolute; top:0; right:50px;">
+        <audio id="main_audio" preload="auto" loop>
+<source src="./陈奕迅 - 陪你度过漫长岁月.mp3"  type="audio/mpeg" />
+<embed id="main_audio_ie8" hidden="true" autostart="true" height="0" width=0 loop="true" src="./陈奕迅 - 陪你度过漫长岁月.mp3"  />
+</audio>
+        <a class="c-white fs-12 icon-play rotate" id="btn-play" href="javascript:void(0);"></a>
+    </div>
+    <script type="text/javascript">
+        //获取picid函数
+        $(function() {
+            $("area").click(function() {
+                var picId = $(this).attr("data-id");
+                var picSrc = "images/img_big/" + picId + ".jpg"
+                $(".modal-content>.pic-box>img").attr("src", picSrc);
+            })
+            var isPlaying = function(audio) {
+                return !audio.paused;
+            }
+            var a = document.getElementById('main_audio');
+            if (!(a.play instanceof Function)) {
+                a = document.getElementById('main_audio_ie8');
+                isPlaying = function(audio) {
+                    return audio.playState == 2;
+                }
+            }
+            $('#btn-play').on('click', function() {
+                if ($(this).hasClass('rotate')) {
+                    a.pause();
+                    $(this).removeClass('rotate');
+                } else {
+                    a.play();
+                    $(this).addClass('rotate');
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>
+<script>
+    (function() {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'push.js'
+        } else {
+            bp.src = 'push-1.js'
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "hm.js-409ccbe4694e0213c11f33f5b461a258.js"
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
