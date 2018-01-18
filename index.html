@@ -84,7 +84,17 @@
         }
     });
 </script>
-<script src="snow.js"></script>
+<!--<script src="snow.js"></script>-->
+<script src="snow2.js"></script>
+<script>
+    window.onload = function(){
+        snow.down();
+        // snow.info.top : 0;  画布的顶点位置
+        // snow.info.left : 0; 画布的左对齐位置
+        // snow.info.zIndex = 500; 画布的层级
+        // snow.info.number : 70   雪花的数量
+    };
+</script>
 <style type="text/css">
     .snow-container {
         position: fixed;
@@ -266,24 +276,24 @@
 
 </html>
 <script>
-    (function() {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'push.js'
-        } else {
-            bp.src = 'push-1.js'
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
+//    (function() {
+//        var bp = document.createElement('script');
+//        var curProtocol = window.location.protocol.split(':')[0];
+//        if (curProtocol === 'https') {
+//            bp.src = 'push.js'
+//        } else {
+//            bp.src = 'push-1.js'
+//        }
+//        var s = document.getElementsByTagName("script")[0];
+//        s.parentNode.insertBefore(bp, s);
+//    })();
 </script>
 <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "hm.js-409ccbe4694e0213c11f33f5b461a258.js"
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+   // var _hmt = _hmt || [];
+   // (function() {
+   //     var hm = document.createElement("script");
+   //     hm.src = "hm.js-409ccbe4694e0213c11f33f5b461a258.js"
+   //     var s = document.getElementsByTagName("script")[0];
+   //     s.parentNode.insertBefore(hm, s);
+   // })();
 </script>
